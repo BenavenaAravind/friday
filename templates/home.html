@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ChatGPT UI Clone</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        height: 100vh;
+        background-color: #f7f7f8;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 250px;
+        background-color: #ffffff;
+        border-right: 1px solid #ddd;
+        padding: 15px;
+    }
+
+    .sidebar h3 {
+        margin-top: 20px;
+        color: #666;
+        font-size: 14px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar li {
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .sidebar li:hover {
+        background-color: #f0f0f0;
+    }
+
+    /* Main Content */
+    .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Header */
+    .header {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header h2 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    /* Center Area */
+    .center {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .center h1 {
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+
+    /* Input Box */
+    .input-box {
+        width: 500px;
+        background: white;
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .input-box input {
+        border: none;
+        outline: none;
+        flex: 1;
+        font-size: 16px;
+    }
+
+    .icon {
+        cursor: pointer;
+        font-size: 18px;
+    }
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <h3>Menu</h3>
+    <ul>
+        <li>New chat</li>
+        <li>Search chats</li>
+        <li>Images</li>
+        <li>Apps</li>
+        <li>Deep research</li>
+        <li>Codex</li>
+        <li>GPTs</li>
+    </ul>
+
+    <h3>Your chats</h3>
+    <ul>
+        <li>CLL Operations Fix</li>
+        <li>CLL Reverse Display Fix</li>
+        <li>Stack size tracking</li>
+        <li>Singly Linked List</li>
+    </ul>
+</div>
+
+<!-- Main -->
+<div class="main">
+
+    <!-- Header -->
+    <div class="header">
+        <h2>ChatGPT</h2>
+        <div>⚙️ ⭕</div>
+    </div>
+
+    <!-- Center -->
+    <div class="center">
+        <h1>Where should we begin?</h1>
+
+        <div class="input-box">
+            <span class="icon">➕</span>
+            <input type="text" placeholder="Ask anything">
+            <span class="icon">🎤</span>
+            <span class="icon">⚫</span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
